@@ -1,0 +1,95 @@
+/* HEADER: main container for navbar */
+.header {
+  display: flex;                  /* makes children align in a row */
+  justify-content: space-between; /* places first child left, last child right */
+  align-items: center;            /* vertically centers children */
+  padding: 10px 20px;             /* spacing inside the header */
+  background: yellow;             /* header background color */
+}
+
+/* Wrapper for search input + icons */
+.search-icons-wrapper {
+  display: flex;                  /* aligns children in a row */
+  align-items: center;            /* vertically centers children */
+  gap: 15px;                      /* space between search and icons */
+}
+
+/* Container for individual icons/buttons */
+.icons-container {
+  display: flex;                  /* icons aligned in a row */
+  gap: 8px;                       /* space between icons */
+  margin-right: 78px;             /* pushes icons away from the right edge */
+  width: 28px;                     /* width of the container (may affect layout) */
+  height: 28px;                    /* height of the container */
+  cursor: pointer;                /* cursor changes to pointer on hover */
+}
+
+/* Container for search input + optional button */
+.search-container {
+  display: flex;                  /* aligns input and search icon in a row */
+  align-items: center;            /* vertically centers input and icon */
+  margin-right: 13cm;             /* moves container far to the left/right (large offset) */
+  gap: 2px;                       /* small space between input and search icon */
+}
+
+/* Search input field styling */
+.search-container input {
+  padding: 3px 7px;              /* inner spacing inside input */
+  border: 3px solid #fcfcfc;         /* gray border around input */
+  border-radius: 27px;             /* rounded corners */
+}
+
+/* Search icon inside the search container */
+.search-container .search-icon {
+  width: 24px;                     /* icon width */
+  height: 24px;                    /* icon height */
+  cursor: pointer;                /* pointer cursor on hover */
+}
+
+/* Generic styling for icon buttons */
+.icon-btn {
+  background: none;                /* removes default button background */
+  border: none;                    /* removes default button border */
+  padding: 4px;                    /* small inner spacing */
+  cursor: pointer;                 /* pointer cursor on hover */
+  display: flex;                   /* aligns image inside button in a row (flex) */
+  align-items: center;             /* vertically centers image */
+  justify-content: center;         /* horizontally centers image */
+  transition: transform 0.3s ease; /* smooth scaling animation on hover */
+}
+
+/* Image inside icon buttons */
+.icon-btn img {
+  width: 24px;                     /* icon width */
+  height: 24px;                    /* icon height */
+  pointer-events: none;            /* ensures click is detected on button, not image */
+}
+
+/* Hover effect for icon buttons */
+.icon-btn:hover {
+  transform: scale(1.2);           /* scales icon up 20% when hovered */
+}
+
+/* Styling for search button (similar to icon-btn) */
+.search-btn {
+  background: none;                /* removes default button background */
+  border: none;                    /* removes default button border */
+  padding: 4px;                    /* small inner spacing */
+  cursor: pointer;                 /* pointer cursor on hover */
+  display: flex;                   /* aligns image inside button in a row (flex) */
+  align-items: center;             /* vertically centers image */
+  justify-content: center;         /* horizontally centers image */
+  transition: transform 0.3s ease; /* smooth scaling animation on hover */
+}
+
+/* Image inside search button */
+.search-btn img {
+  width: 24px;                     /* icon width */
+  height: 24px;                    /* icon height */
+  pointer-events: none;            /* ensures click is detected on button, not image */
+}
+
+/* Hover effect for search button */
+.search-btn:hover {
+  transform: scale(1.2);           /* scales icon up 20% when hovered */
+}
